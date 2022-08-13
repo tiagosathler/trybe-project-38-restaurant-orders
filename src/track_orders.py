@@ -5,7 +5,7 @@ class TrackOrders:
     def __len__(self) -> int:
         return len(self.__orders)
 
-    def add_new_order(self, customer: str, order: str, day: str):
+    def add_new_order(self, customer: str, order: str, day: str) -> None:
         self.__orders.append({
             'customer': customer,
             'dish': order,
@@ -70,9 +70,9 @@ class TrackOrders:
 
         return busiest_day
 
-    def get_least_busy_day(self):
+    def get_least_busy_day(self) -> str:
         opened_days = dict.fromkeys(self.__get_open_days(), 0)
-        min_count = len(self.__orders)
+        min_count = len(self.__orders) + 1
 
         for order in self.__orders:
             opened_days[order['weekday']] += 1
