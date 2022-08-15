@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.4, pytest-7.1.1, pluggy-1.0.0 -- /home/tiago/trybe-exercises/projetos/38-sd-015-b-restaurant-orders/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/tiago/trybe-exercises/projetos/38-sd-015-b-restaurant-orders, configfile: pyproject.toml, testpaths: tests
+plugins: cov-2.10.1, json-0.4.0
+collecting ... collected 16 items
+
+tests/test_analyze_log.py::test_validate_content_of_generated_file PASSED
+tests/test_analyze_log.py::test_validate_nonexistent_file PASSED
+tests/test_analyze_log.py::test_validate_file_with_invalid_extension PASSED
+tests/test_inventory_control.py::test_validate_updated_the_quantity_in_stock PASSED
+tests/test_inventory_control.py::test_validate_buy_all_stock_of_burger PASSED
+tests/test_inventory_control.py::test_validate_buy_a_amount_greater_than_the_minimum PASSED
+tests/test_inventory_control.py::test_validate_shared_ingredient PASSED
+tests/test_inventory_control.py::test_list_all_dishes_with_ingredients PASSED
+tests/test_inventory_control.py::test_do_not_list_dishes_without_ingredients PASSED
+tests/test_track_orders.py::test_validate_class_start_with_len_0 PASSED
+tests/test_track_orders.py::test_validate_add_order PASSED
+tests/test_track_orders.py::test_validate_dish_most_ordered PASSED
+tests/test_track_orders.py::test_validate_order_never_made_by_the_customer PASSED
+tests/test_track_orders.py::test_validate_day_that_order_was_never_placed PASSED
+tests/test_track_orders.py::test_validate_busiest_day PASSED
+tests/test_track_orders.py::test_validate_less_busy_day PASSED
+
+============================== 16 passed in 0.03s ==============================
